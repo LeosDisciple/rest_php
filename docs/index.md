@@ -1,4 +1,4 @@
-# REST API with PHP
+# REST APIs with PHP
 ## General
 This project describes how to create REST APIs with PHP.\
 It shows the reasoning behind the implementation and explains the code.\
