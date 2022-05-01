@@ -1,2 +1,2 @@
 # rest_php
-How to build a REST API with PHP
+How to build a REST APIs with PHP
