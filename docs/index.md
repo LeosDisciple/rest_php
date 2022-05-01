@@ -4,8 +4,11 @@ This project describes how to create REST APIs with PHP.\
 It shows the reasoning behind the implementation and explains the code.\
 The project is based on the Udemy course [Create a REST API using basic PHP with Token Authentication by Michael Spinks](https://www.udemy.com/course/create-a-rest-api-using-basic-php-with-token-authentication/)
 
+## Why PHP?
+PHP is an established programming language for the web. Many hosting providers allow you to develop web applications based on [XAMPP](https://en.wikipedia.org/wiki/XAMPP) in PHP. These are the reasons why it can be very interesting and cost effective to create REST APIs with PHP.
+
 ## About REST APIs
-### What are they
+### What are they?
 REST APIs are a popular way of implementing backend interfaces (see [Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)).
 
 ### Example of a REST API
