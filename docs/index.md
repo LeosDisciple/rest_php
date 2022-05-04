@@ -33,3 +33,8 @@ Here are the most common ones and their applications:
 #### Responses
 Every call on a REST endpoint will return a HTTP response status code informing the client on the outcome of the operation.\
 See [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+
+## The implementation
+
+### PHP MySQL queries
+Here's a list of often used queries: [PHP MySQL queries](php_mysql.html). 
