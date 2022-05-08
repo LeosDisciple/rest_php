@@ -94,13 +94,11 @@ Here's an example of a successful GET request:
 }
 ```
 
-## The implementation
-This chapter shows how the API was implemented in PHP.
 
-### The process
+## The process
 The client sends a request to the server.
 
-#### Quality checks on request
+### Quality checks on request
 The server goes through the following steps to process the request:
 1. Check request method (GET, POST, PATCH/PUT, DELETE)
 2. Check if parameters are correct (parameters, content-type, etc.)
@@ -108,10 +106,14 @@ The server goes through the following steps to process the request:
   1. Correct structure, correct data types
   2. Correct content (like mandatory fields)
 
-#### Database access
+### Database access & response
 And then the server:
 1. Executes the requested access to the database
 2. Returns results to the client
 
-### PHP MySQL queries
-Here's a list of often used queries: [PHP MySQL queries](php_mysql.html).
+## The implementation
+How to implement a REST API in PHP is described in the following subpages:
+1. Process client requests
+2. Response process
+3. Data validation
+4. Database operations
