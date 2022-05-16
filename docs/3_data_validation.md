@@ -10,9 +10,7 @@ The will have the following structure:
 |id|int(25)|yes|
 |title|String(25)|yes|
 |content|String(250)|no|
-|is_public|boolean|yes|
+|isPublic|boolean|yes|
 |date|Date|no|
-
-
 
 ## Data types

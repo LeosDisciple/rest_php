@@ -12,23 +12,23 @@ PHP is an established programming language for the web. Many hosting providers a
 REST APIs are a popular way of implementing backend interfaces (see [Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)).
 
 ### Example of a REST API
-* www.example.com/tasks
-  * Manages the resource "tasks"
+* www.example.com/notes
+  * Manages the resource "notes"
 * Methods
   * POST
-    * Creates a task (CREATE operator)
-    * POST GET www.example.com/tasks + JSON object creates a new task and returns its id
+    * Creates a note (CREATE operator)
+    * POST GET www.example.com/notes + JSON object creates a new task and returns its id
   * GET
-    * Returns tasks (READ operator)
-    * GET www.example.com/tasks returns all tasks
-    * GET www.example.com/tasks/page/1 returns first page of all tasks ("pagination")
-    * GET www.example.com/tasks/1 returns task with id "1"
+    * Returns notes (READ operator)
+    * GET www.example.com/notes returns all notes
+    * GET www.example.com/notes/page/1 returns first page of all notes ("pagination")
+    * GET www.example.com/notes/1 returns note with id "1"
   * DELETE
-    * Deletes task (DELETE operator)
-    * DELETE www.example.com/tasks/1 deletes task with id "1"
+    * Deletes note (DELETE operator)
+    * DELETE www.example.com/notes/1 deletes note with id "1"
   * PUT / PATCH
-    * Updates task (UPDATE operator)
-    * PUT / PATCH www.example.com/tasks/1 updates + JSON object task with id "1"
+    * Updates note (UPDATE operator)
+    * PUT / PATCH www.example.com/notes/1 updates + JSON object task with id "1"
     * Difference between PUT and PATCH:
       * PATCH is used to update an existing entity with new information. You can’t patch an entity that doesn’t exist.
       * PUT is used to set an entity’s information completely. PUTting is similar to POSTing, except that it will overwrite the entity if already exists or create it otherwise.
@@ -37,7 +37,7 @@ REST APIs are a popular way of implementing backend interfaces (see [Representat
 #### Endpoints
 Use **nouns** and **plurals** for endpoints.
 Examples:
-* www.example.com/tasks
+* www.example.com/notes
 * www.example.com/cars
 * www.example.com/heroes
 
