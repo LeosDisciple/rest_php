@@ -1,0 +1,21 @@
+php_flag display_errors on
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# --- Notes ---
+# Puts the id into a parameter called "noteid"
+RewriteRule ^notes/([0-9]+)$ controller/notes.php?noteid=$1 [L]
+
+# Tranforms the text "public" into a parameter value "is_public=Y"
+RewriteRule ^notes/public$ controller/notes.php?is_public=Y [L]
+
+# Tranforms the text "public" into a parameter value "is_public=N"
+RewriteRule ^notes/private$ controller/notes.php?is_public=N [L]
+
+# Puts the page number into a parameter called "page"
+RewriteRule ^notes/page/([0-9]+)$ controller/notes.php?page=$1 [L]
+
+# Reroutes a parameter free request to the controller
+RewriteRule ^notes$ controller/notes.php [L]
