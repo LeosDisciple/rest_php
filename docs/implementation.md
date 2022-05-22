@@ -8,24 +8,17 @@ It follows these steps which are explained more in detail:
   b. Database operations
 3. Response to client
 
-1. Processing client requests
-2. Data operations
-  1. Data validation
-  2. Database operations
-3. Response to client
-
-
 ## Use case: Notes
 To illustrate the mechanisms we are implementing a backend that stores **notes**.
 
 ### Operations
 The client can perform the following operations with the backend
 1. **Create** a new note
-2. Make the following **Read** operations
-  1. Get one note
-  2. Get all notes
-  3. Get all notes with pagination
-  4. Get all public notes or all private notes
+2. Make the following **Read** operations\
+  a. Get one note\
+  b. Get all notes\
+  c. Get all notes with pagination\
+  d. Get all public notes or all private notes
 3. **Update** a note
 4. **Delete** a note
 
@@ -91,14 +84,14 @@ These will be accessed by the controller through the **$_GET** superglobal varia
 The controller goes through the following process:
 1. Check the request method with **$_SERVER['REQUEST_METHOD']** for **POST, GET, PUT and DELETE** and retrieve the client parameter through **$_GET**
 2. Create a instance of the mode **Note.php**
-3. JSON payload operations (only for POST and PUT):
-  1. Check JSON payload consistency with *checkContentTypeJson()*
-  2. Inject the payload JSON data from client with *injectJson()*
-4. Call the corresponding method on the object:
-  1. *writeToDB()*
-  2. *readFromDB(), readAllFromDB(), readPage(), readAllPublicPrivate()*
-  3. *updateOnDB()*
-  4. *deleteFromDB()*
+3. JSON payload operations (only for POST and PUT):\
+  a. Check JSON payload consistency with *checkContentTypeJson()*\
+  b. Inject the payload JSON data from client with *injectJson()*
+4. Call the corresponding method on the object:\
+  a. *writeToDB()* \
+  b. *readFromDB(), readAllFromDB(), readPage(), readAllPublicPrivate()* \
+  c. *updateOnDB()* \
+  d. *deleteFromDB()*
 
 ## Data validation
 The client data is validated in different areas of the application:
