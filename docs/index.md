@@ -81,19 +81,18 @@ Here's an example of a successful GET request:
     ],
     "data": {
         "rows_returned": 1,
-        "tasks": [
+        "notes": [
             {
                 "id": "25",
                 "title": "Test Post Title",
-                "description": "Barilla Description",
-                "deadline": null,
-                "completed": "Y"
+                "content": "Barilla Description",
+                "is_public": "Y",
+                "date": "01/01/1990 12:53"
             }
         ]
     }
 }
 ```
-
 
 ## The process
 The client sends a request to the server.
@@ -112,8 +111,5 @@ And then the server:
 2. Returns results to the client
 
 ## The implementation
-How to implement a REST API in PHP is described in the following subpages:
-1. Process client requests
-2. Response process
-3. Data validation
-4. Database operations
+How to implement a REST API in PHP is described in the following subpage:
+[Implementation of REST APIs with PHP](implementation.html)
