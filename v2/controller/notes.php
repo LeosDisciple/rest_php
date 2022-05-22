@@ -4,6 +4,11 @@ require_once('db.php');
 require_once('../model/Response.php');
 require_once('../model/Note.php');
 
+/* TODO:
+ - Define what to do with "date" - is it the last Creation / update? Can it be set manually?
+ - Implement the date structure string operations
+*/
+
 // Checks content-type is set to JSON
 // Return error message to client and exits if faulty
 function checkContentTypeJson() {
@@ -32,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     // 2. Execute DB access
     $note = new Note();
+    // TODO: Optimize by passing this parameter to the "readFromDB()" method
     $note->setId($noteid);
 
     // 3. Execute DB access
@@ -114,6 +120,7 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     // --> Error handling: In case of inconsistent data an Error message is returned directly to the client
     $note = new Note();
     $note->injectJson($jsonData);
+    // TODO: Optimize by passing this parameter to the "readFromDB()" method
     $note->setId($noteid);
 
     print "\nReady to update object";
@@ -143,6 +150,7 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
 
     // 2. Execute DB access
     $note = new Note();
+    // TODO: Optimize by passing this parameter to the "readFromDB()" method
     $note->setId($noteid);
 
     // 3. Execute DB access

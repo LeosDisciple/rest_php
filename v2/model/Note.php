@@ -56,6 +56,7 @@ class Note {
     return (($this->_date == null) ? "NULL" : "'".$this->_date."'");
   }
 
+  // TODO: This function can probably be set to private
   // Checks consistency of data and returns error response to client if data is inconsistent
   public function injectAttributes($id, $title, $content, $is_public, $date) {
 
