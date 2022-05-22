@@ -1,12 +1,19 @@
 # Implementation of REST APIs with PHP
-This page describes how a REST API can be implemented in PHP
+This page describes how a REST APIs can be implemented in PHP
 
 It follows these steps which are explained more in detail:
+1. Processing client requests
+2. Data operations\
+  a. Data validation\
+  b. Database operations
+3. Response to client
+
 1. Processing client requests
 2. Data operations
   1. Data validation
   2. Database operations
 3. Response to client
+
 
 ## Use case: Notes
 To illustrate the mechanisms we are implementing a backend that stores **notes**.
